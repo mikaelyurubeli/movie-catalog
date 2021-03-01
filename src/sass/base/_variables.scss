@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+$base-url: '/assets/' !default;
+
+
+
+/// Colors variables
+/// Base colors that will be used
+$black: #121212 !default;
+$white: #fff;
+$lightGrey: #E5E5E5;
+$grey: #929292;
+$red: #FF0000;
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(/assets/fonts/Montserrat-Regular.ttf);
+}
+
+/// base font style to be use
+$font-primary: 'montserrat-regular';
